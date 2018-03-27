@@ -22,6 +22,8 @@ Click here to open the page [API PAGE](locahost:3000)
 
 At this stage the end point now needs a database this is step 2
 
+**If this fails run :-  `node /src/app.js`**
+
 ## Database Setup
 
 The mySQL database lives within a docker container for ease this can be spun up using Docker compose, Please download [Docker compose](https://docs.docker.com/compose/install/) this will allow you to run the commands below, to check you have docker compose on your machine run `docker-compose -v` if you get a response then perfect your ready!
