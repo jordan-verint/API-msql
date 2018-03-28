@@ -1,0 +1,26 @@
+swagger: "2.0"
+info: 
+  version: "1.0.0"
+  title: "Olab Comments API"
+  description: "Olab Comments API is built on Node using Express to make calls to the mysql database"
+  termsOfService: "http://swagger.io/terms/"
+  contact: 
+    name: "Olab Front-End Team"
+  license: 
+    name: "MIT"
+host: "localhost:3000"
+basePath: "/"
+schemes: 
+  - "http"
+consumes: 
+  - "application/json"
+produces:
+  - "application/json"
+paths:
+  /comments:
+      get:
+        summary: Get all comment
+        description: This end point returns all users comments
+        responses:
+          200:
+            description: OK
