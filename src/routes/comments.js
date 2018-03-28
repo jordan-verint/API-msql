@@ -20,7 +20,9 @@ router.get('/', function (req, res, next) {
 router.get('/:id', function (req, res, next) {
     connection.query('SELECT * FROM comments WHERE id = '+req.params.id, function (error, rows, fields) {
         if (error) throw error;
-        return res.end(JSON.stringify(rows))
+        let data = rows.length ? rows : {error: 'Sorry comment with the id:'+req.params.id+' does not existd yet.'};
+ 
+        return res.end(JSON.stringify(data))
         connection.end();
     });
 });
